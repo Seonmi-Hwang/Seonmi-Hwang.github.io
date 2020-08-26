@@ -2,6 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
+remote_theme : alshedivat/al-folio
 title: You R. Name
 email: you@example.com
 description: > # this means to ignore newlines until "url:"
