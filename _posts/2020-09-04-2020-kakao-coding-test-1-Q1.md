@@ -1,6 +1,6 @@
 ---
 title: "[알고리즘] 2020 카카오 1차 코딩 테스트 1번문제 풀이"
-date: 2020-09-04 11:00:00 -0400
+date: 2020-09-04 11:14:00 -0400
 categories: algorithm
 tags: kakao coding test 2020 1차 1번
 ---
@@ -81,8 +81,11 @@ minLength = newStr.length();
 ```
 
 ## 결과
+아래의 코드는 위 풀이과정을 통해 완성된 코드이다.  
 
-프로그래머스 스쿨에서 실행시키기 위해서 Test1.java 파일의 solution 메소드에 있던 코드를 긁어와서 붙여넣기 하였다.
+https://github.com/Seonmi-Hwang/study/commit/29ee0be96c57782fa6f341324572060c876fd550#diff-c052d8c917777b33fe9abce30b016e78  
+
+프로그래머스 스쿨에서 실행시키기 위해서 약간 변형하였다.  
 
 ```java
 class Solution {
