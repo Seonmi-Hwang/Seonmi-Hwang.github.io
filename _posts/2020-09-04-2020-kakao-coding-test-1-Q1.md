@@ -1,7 +1,6 @@
 ---
 title: "[알고리즘] 2020 카카오 1차 코딩 테스트 1번문제 풀이"
 date: 2020-09-04 11:00:00 -0400
-comments: true
 categories: algorithm
 tags: kakao coding test 2020 1차 1번
 ---
