@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "[알고리즘] 2020 카카오 1차 코딩 테스트 1번문제 풀이"
-date: 2020-08-26 01:07:00 -0400
+date: 2020-09-04 11:00:00 -0400
 comments: true
 categories: algorithm
 tags: kakao coding test 2020 1차 1번
@@ -16,6 +15,10 @@ tags: kakao coding test 2020 1차 1번
 사실 5시간 만에 2020년 1차 문제를 다 풀어보려고 했으나 당연히 실패.  
 
 2시간 반만에 1번 문제를 풀었다..^^  
+
+예시만 먼저 제대로 봤어도 삽질을 덜했을 텐데..  
+
+다음에는 예시까지 문제 전체를 확실히 읽고 시작해야겠다.  
 
 본론으로.  
 
@@ -46,7 +49,7 @@ tags: kakao coding test 2020 1차 1번
 
 https://uiandwe.tistory.com/483  
 
-이 블로그를 통해 substring을 사용하는 것이 맞겠다는 생각을 했고,    
+이 블로그를 통해 위 생각은 포기하고 단어들을 일일이 비교하면서 substring을 사용하는 것이 맞겠다는 생각을 했고,    
 
 블로그와 같이 중첩 for문을 쓰려다가 아래 예를 보고 n/2번 반복하는 for문 안에 while문을 넣기로 했다.  
 
