@@ -1,6 +1,6 @@
 ---
 title: "[코딩테스트] Codility Lesson 3. TapeEquilibrium 문제풀이"
-date: 2021-01-10 21:40:00 -0400
+date: 2021-01-10 21:16:00 -0400
 categories: coding_test
 tags: 코딩테스트 코테 codility lesson 3
 --- 
