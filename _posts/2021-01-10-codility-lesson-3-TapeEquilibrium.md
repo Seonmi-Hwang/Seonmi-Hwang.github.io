@@ -112,6 +112,10 @@ class Solution {
 }
 ```
 
+## Remind  
+- `Math.min(A, B)` 는 A와 B 중 더 작은 값을 반환한다. (`Math.max(A, B)` 는 그 반대)  
+- `Math.abs(A)` 는 A의 절댓값을 반환한다. 
+
 ## 결과 링크  
 https://app.codility.com/demo/results/training2U8KXB-2AZ/  
 
