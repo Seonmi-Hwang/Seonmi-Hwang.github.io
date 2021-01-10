@@ -1,6 +1,6 @@
 ---
 title: "Welcome!"
-date: 2020-08-26 21:45:00 -0400
+date: 2020-08-26 00:00:00 -0400
 categories: blog start
 ---
 
