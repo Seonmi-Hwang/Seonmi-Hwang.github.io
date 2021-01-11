@@ -84,7 +84,7 @@ P로 배열 A를 두 개로 쪼갤건데, 0 ~ P - 1 까지 더한 것과, P ~ N 
 
 
 ## 작성 코드 
-```
+```java
 // you can also use imports, for example:
 // import java.util.*;
 
