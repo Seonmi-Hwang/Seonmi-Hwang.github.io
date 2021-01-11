@@ -77,7 +77,7 @@ A[K]는 K 시간에 떨어진 잎의 위치를 의미.
 
 
 ## 작성 코드 
-```
+```java
 // you can also use imports, for example:
 // import java.util.*;
 import java.util.HashSet;
@@ -105,7 +105,9 @@ class Solution {
 
 ## Remind  
 - HashSet을 사용하자 add(), size()
-```Set<Integer> set = new HashSet<Integer>();```
+```java 
+Set<Integer> set = new HashSet<Integer>();
+```
 
 ## 결과 링크  
 https://app.codility.com/demo/results/training638GP8-98Y/
