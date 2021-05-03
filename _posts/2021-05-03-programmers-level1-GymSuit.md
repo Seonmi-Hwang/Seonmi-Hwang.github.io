@@ -137,7 +137,7 @@ class Solution {
 배열 크기를 n+2로 설정하여 맨앞과 맨뒤는 비워놓고 하면 다른 사람의 풀이보다 깔끔해진다.  
 초반에 잘 생각한 점은, 체육복이 없는 사람을 기준으로 한 것!  
 
-## 다른 사람 풀이
+## 다른 사람 풀이 1
 ```java
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
@@ -166,6 +166,58 @@ class Solution {
 }
 ```
 
+HashSet을 사용하여 풀이할 수도 있었다.  
+내가 해석한 코드의 알고리즘은 아래와 같다.  
+1. 전체 학생 수에서 체육복을 도난당한 사람들의 수를 뺀다.  
+2. 여분의 체육복이 있는 학생들을 hashset에 담는다.  
+3. 여분이 있는 학생들 중 도난당한 사람이 있다면 answer++, hashset에서 제거, lost 목록에서도 제거 -> hashset에는 온전히 여분의 체육복이 있는 학생만 남고, lost에는 체육복이 온전히 없는 학생만 남음  
+4. 체육복 없는 학생 목록(lost)을 기준으로 그 학생의 앞뒤를 여분있는 학생set(hashset)에서 찾아서 있으면 answer++, 그 학생을 hashset에서 제외    
+
+체육복 있는 학생과 없는 학생으로 나눠서 하나씩 제거해나가는 풀이방법이 인상적이었다.  
+심지어 간단함.. 매력적인 코드다.  
+
+## 다른 사람 풀이 2
+```java
+import java.util.HashSet;
+class Solution {
+    public int solution(int n, int[] lost, int[] reserve) {
+        int answer=n-lost.length;
+        HashSet<Integer> ko = new HashSet<Integer>();
+        for(int k : reserve) {
+            ko.add(k);
+        }
+        for(int i =0;i<lost.length;i++) {
+            if(ko.contains(lost[i])) {
+                //System.out.println("내껀내가입지");
+                answer++;
+                ko.remove(lost[i]);
+                lost[i]=-1;
+            }
+        }
+
+
+        for(int i =0;i<lost.length;i++) {
+            //System.out.println(i);
+
+            if(ko.contains(lost[i]-1)) {
+                //System.out.println("있다");
+                answer++;
+                ko.remove(lost[i]-1);
+            }else if(ko.contains(lost[i]+1)) {
+                //System.out.println("있다");
+                answer++;
+                ko.remove(lost[i]+1);
+            }
+            //System.out.println("없다");
+        }
+
+
+        return answer;
+    }
+}
+```
+
 ## Remind  
 배열을 new로 선언하면 모두 0으로 초기화된다.  
 굳이 지문대로 어렵게 인덱스를 맞출 필요는 없다. 간단하고 깔끔하게 풀 수 있는 방법을 생각하자.  
+HashSet!!!  
