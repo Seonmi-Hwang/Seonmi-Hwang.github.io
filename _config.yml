@@ -172,3 +172,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  
+gems:
+- jekyll-seo-tag
